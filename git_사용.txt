@@ -15,3 +15,33 @@ user.name='bbxwon'
 user.email='marieannnnn@gmail.com'
 core.autocrlf=true
 
+** git의 버전을 관리하겠다는 의미(초기화) **
+git init
+
+** git의 현재 버전 관리상태를 확인하기 **
+git status
+
+** 버전을 만들기 위한 준비 상태로 만들기 **
+git add . 현재 모든 파일/폴더를 스테이지 올린다.
+git add aaa.txt <-- aaa.txt파일만 버전관리를 할 수 있도록 하겠다.
+
+** 버전 생성 **
+D:\gitTest1>git commit -m "버전과 관련된 메시지(설명)"
+
+** 버전 확인 **
+git log
+
+** Branch 개념 **
+프로젝트를 분리시킬 때 사용되는 개념
+
+-- master Branch
+git init 하면 기본적으로 master라는 이름으로 branch가 만들어진다.
+"핵심 브런치"라고도 한다.
+
+프로젝트를 관리할 때 중요 내용이 master branch에서 관리되고, 
+실제로 프로젝트를 배포할 때도 master branch를 이용한다.
+
+따라서, 새로운 기능을 만든다면 새로운 branch를 만들어서 테스트해보고 
+안정화가 되면 master branh와 합쳐서 배포를 할 수 있다.
+master branch는 최대한 보수적으로 관리를 한다.
+
