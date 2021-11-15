@@ -1,0 +1,17 @@
+** 사용자 등록 **
+D:\gitTest1>git config --global user.name 'bbxwon'
+
+D:\gitTest1>git config --global user.email 'marieannnnn@gmail.com'
+
+D:\gitTest1>git config --global core.autocrlf true
+
+** 등록된 사용자 확인 **
+D:\gitTest1>git config --global --list
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+filter.lfs.clean=git-lfs clean -- %f
+user.name='bbxwon'
+user.email='marieannnnn@gmail.com'
+core.autocrlf=true
+
